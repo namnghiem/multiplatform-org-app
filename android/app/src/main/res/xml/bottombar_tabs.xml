@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/menu_home"
+        icon="@drawable/ic_account_circle_black_24dp"
+        title="Home" />
+    <tab
+        id="@+id/menu_feed"
+        icon="@drawable/ic_view_day_black_24dp"
+        title="Feed" />
+    <tab
+        id="@+id/menu_events"
+        icon="@drawable/ic_event_available_black_24dp"
+        title="Events" />
+   <!-- <tab
+        id="@+id/menu_news"
+        icon="@drawable/ic_import_contacts_black_24dp"
+        title="News" />-->
+</tabs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/card_vert_margin"
+    android:layout_marginBottom="@dimen/card_vert_margin"
+    android:padding="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/user_picture"
+        android:src="@drawable/placeholder"/>
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/user_picture"
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/user_position"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/user_name"
+        android:layout_below="@id/user_name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_below="@id/user_position"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/user_position"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:layout_toLeftOf="@id/user_button_contact"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:background="@color/fui_transparent"
+        android:id="@+id/user_edit"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/user_button_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@color/fui_transparent"
+        android:padding="4dp"
+        android:src="@drawable/ic_mail_outline_black_24dp"
+        android:textAllCaps="true" />
+</RelativeLayout>

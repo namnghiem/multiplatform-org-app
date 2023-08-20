@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_hor_margin"
+    android:layout_marginRight="@dimen/card_hor_margin"
+    android:layout_marginTop="@dimen/card_vert_margin"
+    android:layout_marginBottom="@dimen/card_vert_margin"
+    >
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/share_details"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/tv_share_ticker"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_share_name"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_share_quote"
+            android:textSize="30sp"
+            android:layout_below="@id/share_details"
+            android:layout_margin="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_share_quote"
+            android:layout_toRightOf="@id/tv_share_quote"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:id="@+id/tv_share_currency"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_share_quote"
+            android:layout_toRightOf="@id/tv_share_quote"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/tv_share_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_share_quote"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/tv_share_buyprice"
+            android:layout_alignTop="@id/tv_share_quote"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_share_quote"
+            android:layout_toRightOf="@id/tv_share_number"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:id="@+id/tv_share_change"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:tint="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/share_details"
+        android:layout_marginRight="@dimen/card_hor_margin"
+        android:layout_alignBottom="@id/share_details"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
